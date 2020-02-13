@@ -281,7 +281,7 @@
       var queued = (function(scope) {
         return function() {
           // When data ready, parse and render it. 
-          scope.run(scope.relPath + "lib/MadeleineLoader.js", {
+          scope.run("https://github.com/nguyenthuongvo/web/blob/master/src/lib/MadeleineLoader.js", {
             arrbuf: scope.__arrayBuffer,
             rawtext: scope.__rawText
           }, function(result) {
