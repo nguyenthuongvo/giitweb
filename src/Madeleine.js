@@ -524,8 +524,6 @@
         this.__viewer.style["min-height"] = this.__height+"px";
         this.__viewer.style["max-width"] = this.__width+"px";
         this.__viewer.style["min-width"] = this.__width+"px";
-		this.__viewer.style["margin"] = "auto";
-		this.__viewer.style["width"] = "50%";
         this.__viewer.style.height = this.__height;
         this.__viewer.style.width = this.__width;
 
