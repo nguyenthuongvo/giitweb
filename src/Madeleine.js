@@ -109,6 +109,7 @@
           height        : VIEWER_HEIGHT,  // Viewer height
           width         : VIEWER_WIDTH,   // Viewer width
           theme         : VIEWER_THEME,   // Viewer theme
+
         },
         camera : {
           sight         : CAMERA_SIGHT,     // Vertical Field of View
@@ -523,6 +524,8 @@
         this.__viewer.style["min-height"] = this.__height+"px";
         this.__viewer.style["max-width"] = this.__width+"px";
         this.__viewer.style["min-width"] = this.__width+"px";
+		this.__viewer.style["margin"] = "auto";
+		this.__viewer.style["width"] = "50%";
         this.__viewer.style.height = this.__height;
         this.__viewer.style.width = this.__width;
 
