@@ -75,13 +75,27 @@
             </div>
         </section>
 		
-		<div class="heading">
-		<h2 class="text-center">Upload và xem thử file 3D (.STL)</h2>
-		</div>
-		<form>
-			<input type="file" id="files" name="files" multiple>
-		</form>
-		<div id="target" style="margin:auto;width:50%;" class="viewer"></div>
+
+		<section class="portfolio-block cv">
+            <div class="container">
+                <div class="work-experience group">
+                    <div class="heading">
+                        <h2 class="text-center">dịch vụ in và thiết kế mô hình 3D</h2>
+                    </div>
+                    <div class="item">
+						<div class="row">
+							<div class="col-md-3"></div>
+							<div class="col-md-6"><input type="file" id="file"></div>
+							<div class="col-md-3"></div>
+						</div>
+                    </div>
+                </div>
+				
+				<div id="target" style="margin:auto;width:50%;" class="viewer"></div>
+            </div>
+        </section>
+			
+		
 		
     </main>
     <footer class="page-footer">
@@ -99,7 +113,7 @@
       window.onload = function(){
         Lily.ready({
           target: 'target',
-          file: 'files',
+          file: 'file',
           path: 'src'
         });
       }; 
