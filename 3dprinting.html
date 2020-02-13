@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 
+	<link rel="stylesheet" type="text/css" media="screen" href="src/css/Madeleine.css">
+	
 	<script src="src/lib/stats.js"></script>
     <script src="src/lib/detector.js"></script>
+    <script src="src/lib/three.min.js"></script>
     <script src="src/Madeleine.js"></script>
 	
 </head>
@@ -74,21 +77,9 @@
                         <h2 class="text-center">UPload và xem thử file 3D (.STL)</h2>
                     </div>
 					
-					<div id="stl_cont" style="width:500px;height:500px;margin:0 auto; border:1px;">
-					</div>
-                    <div class="input-group mb-3">
-					  <div class="input-group-prepend">
-						<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-					  </div>
-					  <div class="custom-file">
-						<input type="file" class="custom-file-input" id="stlFileInput" aria-describedby="inputGroupFileAddon01"  accept="*.*">
-						<label class="custom-file-label" for="stlFileInput">Choose file</label>
-					  </div>
-					</div>
-					
 					<h3>File upload</h3>
 					<form><input type="file" id="files" name="files" multiple></form>
-					<div id="target" class="viewer"></div>
+					<div id="target" class="viewer" style="max-height: 400px; min-height: 400px;"></div>
 					
                 </div>
 
@@ -105,19 +96,17 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
-	<script src="assets/js/stl_viewer.min.js"></script>
+	
 	<script>
-
-		
-		// A $( document ).ready() block.
-		$( document ).ready(function() {
-			
-			var stl_viewer=new StlViewer(document.getElementById("stl_cont"), { models: [ {id:0, filename:"VPS Box v3.stl"} ] });
-			
-		});
-		
-	</script>
-
+      window.onload = function(){
+        Lily.ready({
+          target: 'target',
+          file: 'files',
+          path: '../src'
+        });
+      }; 
+    </script>
+	
 </body>
 
 </html>
