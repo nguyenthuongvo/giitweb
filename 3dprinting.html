@@ -36,7 +36,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="projects-with-sidebar.html">Projects</a></li> -->
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="3dprinting.html">3D Printing</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-compact-grid.html">3D Design</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="3ddesign.html">3D Design</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://nguyenthuongvo.blogspot.com" target="_blank">Blog</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item" role="presentation"></li>
@@ -98,12 +98,7 @@
 		
 		
     </main>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="links"><a href="index.html">About me</a><a href="contact.html">Contact me</a><a href="projects-with-sidebar.html">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="fab fa-blogger"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div>
-        </div><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkq9wiSrUkXpo5TIEREPhRCprmbwnIngY&amp;q=In+3D+C%E1%BA%A7n+Th%C6%A1+V%C3%A0+L%E1%BA%ADp+Tr%C3%ACnh+Arduino%2C+Nguy%E1%BB%85n+Tr%C3%A3i%2C+Ninh+Ki%E1%BB%81u%2C+C%E1%BA%A7n+Th%C6%A1%2C+Vietnam&amp;zoom=18"
-            width="100%" height="400"></iframe></footer>
+    <div id="footer"></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
@@ -117,6 +112,11 @@
           path: 'src'
         });
       }; 
+	  
+	  $(function(){
+		$("#footer").load("footer.html");
+	   });  
+	  
     </script>
 	
 </body>
