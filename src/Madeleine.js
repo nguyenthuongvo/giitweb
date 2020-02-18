@@ -1265,7 +1265,7 @@
             var _options = window.Lily.extend({}, options, {type: "upload", data: files[i]});
             var madeleine = new Madeleine(_options);
             // hide file input element
-            //input.style.display = "none";
+            input.style.display = "none";
           }
         }
       };
